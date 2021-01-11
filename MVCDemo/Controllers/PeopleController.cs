@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVCDemo.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -22,7 +23,7 @@ namespace MVCDemo.Controllers
             people.Add(new PersonModel { FirstName = "Joe", LastName = "Smith", Age = 56 });
             people.Add(new PersonModel { FirstName = "Sarah", LastName = "Connor", Age = 25 });
 
-            return View();
+            return View(people);
         }
     }
 }
