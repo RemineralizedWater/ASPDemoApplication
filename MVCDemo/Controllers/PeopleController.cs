@@ -14,7 +14,7 @@ namespace MVCDemo.Controllers
         {
             return View();
         }
-
+    {
         public ActionResult ListPeople()
         {
             List<PersonModel> people = new List<PersonModel>();
@@ -23,7 +23,7 @@ namespace MVCDemo.Controllers
             people.Add(new PersonModel { FirstName = "Joe", LastName = "Smith", Age = 56 });
             people.Add(new PersonModel { FirstName = "Sarah", LastName = "Connor", Age = 25 });
 
-            return View(people);
+            return View();
         }
     }
 }
